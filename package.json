@@ -1,0 +1,26 @@
+{
+  "name": "rest-app",
+  "version": "1.0.0",
+  "description": "Shop Api - NodeJs RestFul",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "Node",
+    "js",
+    "Restful"
+  ],
+  "author": "Sanjeevan Mummoorthy",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mongoose": "^8.2.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
