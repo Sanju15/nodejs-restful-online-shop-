@@ -7,7 +7,7 @@ const app = express();
 const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
 
-mongoose.connect('mongodb+srv://mongo-project:' + process.env.MONGO_ATLAS_PWD + '@noderestfull-test.mspcihe.mongodb.net/?retryWrites=true&w=majority&appName=noderestfull-test');
+mongoose.connect(process.env.MONGO_ATLAS_CLUSTER_NAME + process.env.MONGO_ATLAS_PWD + process.env.MONGO_ATLAS_URL);
 
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
